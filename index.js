@@ -229,3 +229,66 @@ Bg3.addEventListener('click', () => {
     Bg2.classList.remove('active');
     changeBG();
 })
+
+
+//ACTION BUTTONS
+// Select all heart, comment, share, and bookmark buttons for all posts
+const heartButtons = document.querySelectorAll('.uil-heart');
+const commentButtons = document.querySelectorAll('.uil-comment-dots');
+const shareButtons = document.querySelectorAll('.uil-share-alt');
+const bookmarkButtons = document.querySelectorAll('.uil-bookmark-full');
+
+// Loop through all heart buttons and add event listeners
+heartButtons.forEach((heartButton) => {
+    heartButton.addEventListener('click', function() {
+        if (heartButton.style.color === 'red') {
+            heartButton.style.color = '';  // Reset color to default when unliked
+            alert("You unliked this!");
+        } else {
+            heartButton.style.color = 'red';  // Change color to red when liked
+            alert("You liked this!");
+        }
+    });
+});
+
+// Loop through all comment buttons and add event listeners
+commentButtons.forEach((commentButton) => {
+    commentButton.addEventListener('click', function() {
+        const comment = prompt("Enter your comment:");
+        if (comment) {
+            alert(`Your comment: "${comment}"`);
+
+            // Dynamically change the background color on click
+            commentButton.style.backgroundColor = '#f0f0f0'; // Light gray
+            setTimeout(() => {
+                commentButton.style.backgroundColor = ''; // Reset background color after a while
+            }, 500);
+        }
+    });
+});
+
+// Loop through all share buttons and add event listeners
+shareButtons.forEach((shareButton) => {
+    shareButton.addEventListener('click', function() {
+        alert("Shared this content!");
+
+        // Dynamically scale the icon on click
+        shareButton.style.transform = 'scale(1.1)';  // Increase size
+        setTimeout(() => {
+            shareButton.style.transform = '';  // Reset size after animation
+        }, 200);
+    });
+});
+
+// Loop through all bookmark buttons and add event listeners
+bookmarkButtons.forEach((bookmarkButton) => {
+    bookmarkButton.addEventListener('click', function() {
+        if (bookmarkButton.style.color === 'gold') {
+            bookmarkButton.style.color = '';  // Reset to default when unbookmarked
+            alert("Removed from bookmarks!");
+        } else {
+            bookmarkButton.style.color = 'gold';  // Change color to gold when bookmarked
+            alert("Bookmarked this!");
+        }
+    });
+});
