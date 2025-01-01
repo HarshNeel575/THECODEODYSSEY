@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500;1,600&display=swap');
+
+/* Body and basic layout */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #2e0000, #6a0000, #b30000, #000000);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Section */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #5e2a8c, #9e1b32);
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+#edit-btn, #edit-bio-btn {
+    background-color: #ff4c4c;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* New Post Section */
+.new-post-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+textarea {
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 10px;
+    resize: none;
+    background: radial-gradient(circle, 
+    rgba(50, 0, 50, 0.8), 
+    rgba(100, 0, 100, 0.7), 
+    rgba(0, 0, 0, 1), 
+    rgba(0, 50, 0, 0.8), 
+    rgba(0, 0, 0, 0.9));
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#post-btn {
+    background-color: #ff4c4c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Post Section */
+.posts-section {
+    margin-top: 30px;
+}
+
+.post {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.ingo h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ingo small {
+    color: #888;
+    font-size: 14px;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    object-fit: cover; /* Ensure image fits correctly */
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.caption b {
+    font-weight: bold;
+}
+
+.caption .hash-tag {
+    color: #ff4c4c;
+}
+
+.action-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Interaction Buttons */
+.interaction-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #000000;
+    width: 100%;
+}
+
+.interaction-buttons span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.interaction-buttons .like-icon {
+    color: #ff4c4c;
+}
+
+.interaction-buttons .comment-icon,
+.interaction-buttons .share-icon {
+    color: #555;
+}
+
+.interaction-buttons span:hover {
+    color: #c31414;
+}
+
+.bookmark span {
+    cursor: pointer;
+}
+
+.liked-by {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.liked-by span {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.liked-by p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.comments {
+    color: #888;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Like button when active */
+.like-icon.liked {
+    color: #ff0000;
+}
+
+/* Post image hover effect */
+.photo img:hover {
+    opacity: 0.8;
+}
+
+/* Smooth transition for likes, comments, and shares */
+.interaction-buttons span {
+    transition: all 0.3s ease;
+}
+

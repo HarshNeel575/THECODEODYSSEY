@@ -1,0 +1,119 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: radial-gradient(circle, 
+        rgba(109, 0, 0, 1) 0%,      /* Dark Crimson */
+        rgba(58, 13, 13, 1) 20%,    /* Blood Red */
+        rgba(19, 4, 4, 1) 50%,      /* Deep Maroon */
+        rgba(10, 1, 1, 1) 80%,      /* Shadow Black */
+        #000000 100%);              /* Pure Black */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid crimson;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: crimson;
+    text-shadow: 0 0 10px crimson, 0 0 20px red;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.analytics-summary {
+    margin-bottom: 40px;
+}
+
+.analytics-summary h2,
+.analytics-details h2 {
+    margin-bottom: 20px;
+    color: crimson;
+    text-shadow: 0 0 5px crimson;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: crimson;
+    text-shadow: 0 0 5px crimson;
+}
+
+.card p {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Table */
+.analytics-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.analytics-details table th,
+.analytics-details table td {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid crimson;
+}
+
+.analytics-details table th {
+    background-color: crimson;
+    color: #fff;
+}
+
+.analytics-details table tr:nth-child(odd) {
+    background-color: rgba(19, 4, 4, 0.9);
+}
+
+.analytics-details table tr:nth-child(even) {
+    background-color: rgba(58, 13, 13, 0.9);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-top: 2px solid crimson;
+}

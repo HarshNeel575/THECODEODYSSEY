@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrimsonHive - Profile</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <h1><u>ShatteredVows</h1>
+            <h5>@ShatteredVows</h5></u>
+        </header>
+        
+        <section class="profile-header">
+            <div class="profile-photo">
+                <img id="profile-img" src="./images/profile-1.jpg" alt="Profile Photo">
+                <input type="file" id="profile-photo-input" accept="image/*" style="display: none;">
+            </div>
+            <div class="profile-details">
+                <p><strong>Name:</strong> <span id="username">Rathna'ar WhiteLock</span></p>
+                <p><strong>Class:</strong> <span id="user-class">Blood Monarch</span></p>
+                <p><strong>Race:</strong> Blood Elf</p>
+                <p><strong>Bio:</strong> <span id="user-bio">A master of the Blood Arts and Assasination, Thirsty for Vengeance against the Forsaken.</span></p>
+                <button id="edit-btn">Edit Profile</button>
+                <button id="edit-bio-btn">Edit Bio</button>
+            </div>
+        </section>
+
+        <!-- New Post Section -->
+        <section class="new-post-container">
+            <textarea id="post-caption" placeholder="Write a caption..."></textarea>
+            <input type="file" id="post-image" accept="image/*">
+            <button id="post-btn">Post</button>
+        </section>
+
+        <!-- Posts Section -->
+        <section class="posts-section">
+            <h3>Posts</h3>
+            <!-- Posts will be appended here dynamically -->
+        </section>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
